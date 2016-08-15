@@ -1,0 +1,184 @@
+{
+  "cnt": 5,
+  "list": [
+    {
+      "dt": 1471253702,
+      "coord": {
+        "lon": -101.83,
+        "lat": 35.22
+      },
+      "weather": [{
+        "icon": "01n",
+        "description": "Sky is Clear",
+        "main": "Clear",
+        "id": 800
+      }],
+      "name": "Amarillo",
+      "main": {
+        "temp": 15.89,
+        "temp_min": 15.894,
+        "grnd_level": 912.05,
+        "humidity": 74,
+        "pressure": 912.05,
+        "sea_level": 1031.33,
+        "temp_max": 15.894
+      },
+      "clouds": {"all": 0},
+      "id": 5516233,
+      "sys": {
+        "country": "US",
+        "sunrise": 1471262878,
+        "sunset": 1471311308,
+        "message": 0.0388
+      },
+      "wind": {
+        "deg": 189.505,
+        "speed": 1.86
+      }
+    },
+    {
+      "dt": 1471253037,
+      "coord": {
+        "lon": -87.08,
+        "lat": 32.33
+      },
+      "weather": [{
+        "icon": "01n",
+        "description": "Sky is Clear",
+        "main": "Clear",
+        "id": 800
+      }],
+      "name": "Dallas County",
+      "main": {
+        "temp": 23.59,
+        "temp_min": 23.594,
+        "grnd_level": 1025.53,
+        "humidity": 86,
+        "pressure": 1025.53,
+        "sea_level": 1032.06,
+        "temp_max": 23.594
+      },
+      "clouds": {"all": 0},
+      "id": 4058076,
+      "sys": {
+        "country": "US",
+        "sunrise": 1471259592,
+        "sunset": 1471307517,
+        "message": 0.0081
+      },
+      "wind": {
+        "deg": 146.505,
+        "speed": 1.36
+      }
+    },
+    {
+      "dt": 1471253373,
+      "rain": {"3h": 0},
+      "coord": {
+        "lon": 139.67,
+        "lat": 35.28
+      },
+      "weather": [{
+        "icon": "04d",
+        "description": "broken clouds",
+        "main": "Clouds",
+        "id": 803
+      }],
+      "name": "Yokosuka",
+      "main": {
+        "temp": 28.12,
+        "temp_min": 26.11,
+        "humidity": 73,
+        "pressure": 1003,
+        "temp_max": 30
+      },
+      "clouds": {"all": 76},
+      "id": 1848313,
+      "sys": {
+        "country": "JP",
+        "sunrise": 1471204882,
+        "sunset": 1471253402,
+        "id": 10334,
+        "type": 3,
+        "message": 0.0478
+      },
+      "wind": {
+        "deg": 245,
+        "speed": 1.54,
+        "gust": 4.63
+      }
+    },
+    {
+      "dt": 1471253822,
+      "rain": {"1h": 5.21},
+      "coord": {
+        "lon": -97.32,
+        "lat": 27.88
+      },
+      "weather": [{
+        "icon": "10n",
+        "description": "heavy intensity rain",
+        "main": "Rain",
+        "id": 502
+      }],
+      "name": "Portland",
+      "main": {
+        "temp": 24.44,
+        "temp_min": 22.22,
+        "humidity": 79,
+        "pressure": 1011,
+        "temp_max": 27.22
+      },
+      "clouds": {"all": 64},
+      "id": 4720131,
+      "sys": {
+        "country": "US",
+        "sunrise": 1471262412,
+        "sunset": 1471309612,
+        "id": 58966,
+        "type": 3,
+        "message": 0.0333
+      },
+      "wind": {
+        "deg": 334,
+        "speed": 2.06,
+        "gust": 4.11
+      }
+    },
+    {
+      "dt": 1471253585,
+      "coord": {
+        "lon": -117,
+        "lat": 46.73
+      },
+      "weather": [{
+        "icon": "01n",
+        "description": "Sky is Clear",
+        "main": "Clear",
+        "id": 800
+      }],
+      "name": "Moscow",
+      "main": {
+        "temp": 14.89,
+        "temp_min": 14.894,
+        "grnd_level": 934.34,
+        "humidity": 67,
+        "pressure": 934.34,
+        "sea_level": 1026.18,
+        "temp_max": 14.894
+      },
+      "clouds": {"all": 0},
+      "id": 5601538,
+      "sys": {
+        "country": "US",
+        "sunrise": 1471265254,
+        "sunset": 1471316212,
+        "message": 0.0304
+      },
+      "wind": {
+        "deg": 197.505,
+        "speed": 1.21
+      }
+    }
+  ]
+}

@@ -1,13 +1,36 @@
 import processing.core.*;
+import processing.data.JSONObject;
 
 import java.util.ArrayList;
+import org.multiply.processing.TimedEventGenerator;
 
 public class VerletWeatherWorld extends PApplet {
 	
+	///////////////////////////////////////////////////
+	//DEFINE
+	///////////////////////////////////////////////////	
+	/*
+	 * 
+	 * Weather API Variables
+	 */
+	static final int CITY_CHG_PERIODICITY_IN_SECONDS = 10;
+	static final int WEATHER_UPDATE_IN_SECONDS = 20;
+	/*
+	{"_id":5516233,"name":"Amarillo","country":"US","coord":{"lon":-101.831299,"lat":35.222}}
+	{"_id":4058076,"name":"Dallas County","country":"US","coord":{"lon":-87.083321,"lat":32.333469}}
+	{"_id":1848313,"name":"Yokosuka","country":"JP","coord":{"lon":139.667221,"lat":35.283611}}
+	{"_id":4720131,"name":"Portland","country":"US","coord":{"lon":-97.323883,"lat":27.877251}}
+	{"_id":5601538,"name":"Moscow","country":"US","coord":{"lon":-117.000168,"lat":46.732391}}
+	*/
+	static final String CITY_LIST = "5516233,4058076,1848313,4720131,5601538";
+	TimedEventGenerator weatherRefreshEventGenerator;
+	TimedEventGenerator cityChangeEventGenerator;
+	CityList cityList;
+	
 	int gravity = 1;
-
+    
 	//int bgCol = 0xffddddff;
-	  int bgCol = 0x00000000;
+	int bgCol = 0x00000000;
 	Menu menu;
 	Cage cage;
 
@@ -28,6 +51,20 @@ public class VerletWeatherWorld extends PApplet {
 
 	public void setup() {
 		//size(1024, 768, P3D); 
+		
+	  // initialize weather
+	  cityList = new CityList(this);
+      City ca = cityList.getNextCity();
+	  ca = cityList.getNextCity();	
+	  
+	  weatherRefreshEventGenerator = new TimedEventGenerator(
+		      this, "onWeatherRefreshTimerEvent", true);
+	  weatherRefreshEventGenerator.setIntervalMs(1000 * WEATHER_UPDATE_IN_SECONDS);
+		  
+	  cityChangeEventGenerator = new TimedEventGenerator(
+		      this, "onCityChangeTimerEvent", true);
+
+	  cityChangeEventGenerator.setIntervalMs(1000 * CITY_CHG_PERIODICITY_IN_SECONDS);
 	 
 	  cage = new Cage(new PVector(width*1.075f, height*1.07f, 700));
 
@@ -82,6 +119,25 @@ public class VerletWeatherWorld extends PApplet {
 	    spheres[i].push(new PVector (random(-100.01f, 100.01f), random(-100.01f, 100.01f), random(-100.01f, 100.01f)));
 	  }
 	}
+	
+	public void onWeatherRefreshTimerEvent() {
+		  System.out.println("Got a onWeatherRefreshTimerEvent!");
+		  // list of city IDs
+		  //JSONObject json = loadJSONObject("http://api.openweathermap.org/data/2.5/group?id=4058076,1848313,4720131&units=metric&mode=json&appid=cbc1fc23414e03a198fb37afa9c5bbd8");
+		  JSONObject json = loadJSONObject("http://api.openweathermap.org/data/2.5/group?id=" + CITY_LIST + "&units=metric&mode=json&appid=cbc1fc23414e03a198fb37afa9c5bbd8");
+		  saveJSONObject(json, "cachedWeather.json");
+		  if(cityList != null) {
+		    cityList.initializeCityList();
+		  }
+		}
+
+
+	public void onCityChangeTimerEvent() {
+		  System.out.println("Got a onCityChangeTimerEvent!");
+		  if(cityList != null) {
+		    cityList. getNextCity();
+		  }
+		}
 
 	public void draw() {
 	  background(bgCol);
