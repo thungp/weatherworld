@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import processing.core.PApplet;
+import processing.core.PVector;
 import processing.data.JSONArray;
 import processing.data.JSONObject;
 
@@ -50,9 +51,11 @@ public class CityList {
        percentCloudCoverage = percentCloudCoverage / 100;
        String cityName = city.getString("name");
        int dt = city.getInt("dt");
-       City cityObj = new City(cityName, windSpeed, windDegrees, dt, percentCloudCoverage);
+       City cityObj = new City(this.p, cityName, windSpeed, windDegrees, dt, percentCloudCoverage);
        cList.add(cityObj);
        System.out.println(cityName + ", " + windSpeed + ", " + windDegrees + ", " + dt + "percetnCloutCoverage " + percentCloudCoverage);
+       PVector windVector = cityObj.getWindVector();
+       System.out.println("WindVector (x, y, z, mag) " + windVector.x + ", " + windVector.y +  ", " + windVector.z + ",  " + windVector.mag() );
      }
      
    } 

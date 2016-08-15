@@ -2,7 +2,7 @@
   "cnt": 5,
   "list": [
     {
-      "dt": 1471258090,
+      "dt": 1471262201,
       "coord": {
         "lon": -101.83,
         "lat": 35.22
@@ -15,13 +15,13 @@
       }],
       "name": "Amarillo",
       "main": {
-        "temp": 14.5,
-        "temp_min": 14.502,
-        "grnd_level": 911.8,
-        "humidity": 73,
-        "pressure": 911.8,
-        "sea_level": 1031.33,
-        "temp_max": 14.502
+        "temp": 13.82,
+        "temp_min": 13.823,
+        "grnd_level": 911.5,
+        "humidity": 75,
+        "pressure": 911.5,
+        "sea_level": 1030.84,
+        "temp_max": 13.823
       },
       "clouds": {"all": 0},
       "id": 5516233,
@@ -29,21 +29,21 @@
         "country": "US",
         "sunrise": 1471262878,
         "sunset": 1471311308,
-        "message": 0.0336
+        "message": 0.0086
       },
       "wind": {
-        "deg": 216.502,
-        "speed": 2.56
+        "deg": 200.005,
+        "speed": 2.66
       }
     },
     {
-      "dt": 1471258090,
+      "dt": 1471263520,
       "coord": {
         "lon": -87.08,
         "lat": 32.33
       },
       "weather": [{
-        "icon": "01n",
+        "icon": "01d",
         "description": "Sky is Clear",
         "main": "Clear",
         "id": 800
@@ -64,7 +64,7 @@
         "country": "US",
         "sunrise": 1471259592,
         "sunset": 1471307517,
-        "message": 0.0291
+        "message": 0.0275
       },
       "wind": {
         "deg": 127.002,
@@ -72,47 +72,11 @@
       }
     },
     {
-      "dt": 1471257563,
-      "rain": {"1h": 0.38},
+      "dt": 1471263076,
+      "rain": {"1h": 1.27},
       "coord": {
         "lon": 139.67,
         "lat": 35.28
-      },
-      "weather": [{
-        "icon": "10n",
-        "description": "light rain",
-        "main": "Rain",
-        "id": 500
-      }],
-      "name": "Yokosuka",
-      "main": {
-        "temp": 27.47,
-        "temp_min": 25,
-        "humidity": 75,
-        "pressure": 1004,
-        "temp_max": 30
-      },
-      "clouds": {"all": 32},
-      "id": 1848313,
-      "sys": {
-        "country": "JP",
-        "sunrise": 1471204882,
-        "sunset": 1471253402,
-        "id": 10334,
-        "type": 3,
-        "message": 0.0462
-      },
-      "wind": {
-        "deg": 164.502,
-        "speed": 4.11
-      }
-    },
-    {
-      "dt": 1471257441,
-      "rain": {"1h": 2.54},
-      "coord": {
-        "lon": -97.32,
-        "lat": 27.88
       },
       "weather": [{
         "icon": "10n",
@@ -120,13 +84,49 @@
         "main": "Rain",
         "id": 501
       }],
+      "name": "Yokosuka",
+      "main": {
+        "temp": 27.43,
+        "temp_min": 26.67,
+        "humidity": 79,
+        "pressure": 1004,
+        "temp_max": 28.33
+      },
+      "clouds": {"all": 64},
+      "id": 1848313,
+      "sys": {
+        "country": "JP",
+        "sunrise": 1471204882,
+        "sunset": 1471253402,
+        "id": 10334,
+        "type": 3,
+        "message": 0.0035
+      },
+      "wind": {
+        "deg": 170.505,
+        "speed": 4.91
+      }
+    },
+    {
+      "dt": 1471263184,
+      "rain": {"3h": 0},
+      "coord": {
+        "lon": -97.32,
+        "lat": 27.88
+      },
+      "weather": [{
+        "icon": "03d",
+        "description": "scattered clouds",
+        "main": "Clouds",
+        "id": 802
+      }],
       "name": "Portland",
       "main": {
-        "temp": 23.14,
-        "temp_min": 22.22,
-        "humidity": 79,
-        "pressure": 1011,
-        "temp_max": 23.89
+        "temp": 23.88,
+        "temp_min": 23.33,
+        "humidity": 90,
+        "pressure": 1012,
+        "temp_max": 24.44
       },
       "clouds": {"all": 32},
       "id": 4720131,
@@ -134,17 +134,18 @@
         "country": "US",
         "sunrise": 1471262412,
         "sunset": 1471309612,
-        "id": 58966,
+        "id": 9585,
         "type": 3,
-        "message": 0.0281
+        "message": 0.0328
       },
       "wind": {
-        "deg": 123.002,
-        "speed": 4.46
+        "deg": 332,
+        "speed": 1.03,
+        "gust": 2.57
       }
     },
     {
-      "dt": 1471257606,
+      "dt": 1471263308,
       "coord": {
         "lon": -117,
         "lat": 46.73
@@ -171,7 +172,7 @@
         "country": "US",
         "sunrise": 1471265254,
         "sunset": 1471316212,
-        "message": 0.0277
+        "message": 0.0347
       },
       "wind": {
         "deg": 169.002,
