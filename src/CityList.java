@@ -43,13 +43,16 @@ public class CityList {
      for(int i = 0; i < count; i++) {
        JSONObject city =  cityList.getJSONObject(i);
        JSONObject windJSONObj = city.getJSONObject("wind");
+       JSONObject cloudJSONObj = city.getJSONObject("clouds");
        float windSpeed = windJSONObj.getFloat("speed");
        int windDegrees = windJSONObj.getInt("deg");
+       float percentCloudCoverage = (float) cloudJSONObj.getInt("all") ;
+       percentCloudCoverage = percentCloudCoverage / 100;
        String cityName = city.getString("name");
        int dt = city.getInt("dt");
-       City cityObj = new City(cityName, windSpeed, windDegrees, dt);
+       City cityObj = new City(cityName, windSpeed, windDegrees, dt, percentCloudCoverage);
        cList.add(cityObj);
-       //println(cityName + ", " + windSpeed + ", " + windDegrees + ", " + dt);
+       System.out.println(cityName + ", " + windSpeed + ", " + windDegrees + ", " + dt + "percetnCloutCoverage " + percentCloudCoverage);
      }
      
    } 

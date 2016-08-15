@@ -4,6 +4,20 @@ import processing.data.JSONObject;
 import java.util.ArrayList;
 import org.multiply.processing.TimedEventGenerator;
 
+/*
+  
+   
+Assignment: Final Project
+Author: Peter Thung and Daniel Vance
+Based off  of Verlet World
+
+
+
+Change Log:
+1. (PT) Migrated weather API code from NarutoGame2Server
+2. (PT) Exposed cloudCoveragePercentage into City class and converted to a percentage.
+ */
+
 public class VerletWeatherWorld extends PApplet {
 	
 	///////////////////////////////////////////////////

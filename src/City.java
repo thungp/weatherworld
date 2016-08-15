@@ -5,8 +5,17 @@ public class City {
   int windDirection;
   String cityName;
   int dt; // time
+  float percentCloudCoverage = 0.0f;
   
-  public String getName(){
+  public float getPercentCloudCoverage() {
+	return percentCloudCoverage;
+}
+
+public void setPercentCloudCoverage(float percentCloudCoverage) {
+	this.percentCloudCoverage = percentCloudCoverage;
+}
+
+public String getName(){
     return cityName;
   }
   
@@ -32,7 +41,7 @@ public class City {
   * Copy constructor
   */
   public City(City aCity){
-     this(aCity.getName(), aCity.getWindSpeed(), aCity.getWindDirection(), aCity.getTime());
+     this(aCity.getName(), aCity.getWindSpeed(), aCity.getWindDirection(), aCity.getTime(), aCity.getPercentCloudCoverage());
      //no defensive copies are created here, since 
     //there are no mutable object fields (String is immutable)
   }
@@ -40,11 +49,13 @@ public class City {
   /**
   * regular constructor
   */
-  public City(String name, float speed, int direction, int time){
+  public City(String name, float speed, int direction, int time, float percentCloudCoverage){
     this.cityName = name;
     this.windSpeed = speed;
     this.windDirection = direction;
     this.dt = time;
+    this.percentCloudCoverage = percentCloudCoverage;
+    
   }
   
 }
