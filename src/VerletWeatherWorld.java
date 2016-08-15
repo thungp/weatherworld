@@ -1,6 +1,6 @@
 import processing.core.*;
 import processing.data.JSONObject;
-
+import processing.opengl.*;
 import java.util.ArrayList;
 import org.multiply.processing.TimedEventGenerator;
 
@@ -16,6 +16,7 @@ Based off  of Verlet World
 Change Log:
 1. (PT) Migrated weather API code from NarutoGame2Server
 2. (PT) Exposed cloudCoveragePercentage into City class and converted to a percentage.
+3. (PT) Added city name/wind/direction Text overlay.
  */
 
 public class VerletWeatherWorld extends PApplet {
@@ -158,6 +159,13 @@ public class VerletWeatherWorld extends PApplet {
 
 	  menu.display();
 
+	  if(cityList != null) {
+		    String cityName = cityList.getCurrentCity().getName();
+		    int windDirection = cityList.getCurrentCity().getWindDirection();
+		    float windSpeed = cityList.getCurrentCity().getWindSpeed();
+		    
+		    text("City: " + cityName + " Wind Direction/Speed: " + windDirection + "/" + windSpeed, (float)(0.1 * width), (float) (height * 0.95));
+	  }
 	  translate(width/2, height/2, -550);
 	  rotateY(frameCount*PI/680);
 	  //rotateX(frameCount*PI/280);

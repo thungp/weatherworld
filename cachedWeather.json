@@ -2,45 +2,10 @@
   "cnt": 5,
   "list": [
     {
-      "dt": 1471262201,
+      "dt": 1471281105,
       "coord": {
         "lon": -101.83,
         "lat": 35.22
-      },
-      "weather": [{
-        "icon": "01n",
-        "description": "Sky is Clear",
-        "main": "Clear",
-        "id": 800
-      }],
-      "name": "Amarillo",
-      "main": {
-        "temp": 13.82,
-        "temp_min": 13.823,
-        "grnd_level": 911.5,
-        "humidity": 75,
-        "pressure": 911.5,
-        "sea_level": 1030.84,
-        "temp_max": 13.823
-      },
-      "clouds": {"all": 0},
-      "id": 5516233,
-      "sys": {
-        "country": "US",
-        "sunrise": 1471262878,
-        "sunset": 1471311308,
-        "message": 0.0086
-      },
-      "wind": {
-        "deg": 200.005,
-        "speed": 2.66
-      }
-    },
-    {
-      "dt": 1471263520,
-      "coord": {
-        "lon": -87.08,
-        "lat": 32.33
       },
       "weather": [{
         "icon": "01d",
@@ -48,51 +13,86 @@
         "main": "Clear",
         "id": 800
       }],
-      "name": "Dallas County",
+      "name": "Amarillo",
       "main": {
-        "temp": 23.85,
-        "temp_min": 23.853,
-        "grnd_level": 1024.48,
-        "humidity": 91,
-        "pressure": 1024.48,
-        "sea_level": 1033.11,
-        "temp_max": 23.853
+        "temp": 29.41,
+        "temp_min": 29.413,
+        "grnd_level": 911.59,
+        "humidity": 38,
+        "pressure": 911.59,
+        "sea_level": 1028.98,
+        "temp_max": 29.413
       },
       "clouds": {"all": 0},
+      "id": 5516233,
+      "sys": {
+        "country": "US",
+        "sunrise": 1471262878,
+        "sunset": 1471311308,
+        "message": 0.0024
+      },
+      "wind": {
+        "deg": 221.001,
+        "speed": 3.23
+      }
+    },
+    {
+      "dt": 1471282087,
+      "coord": {
+        "lon": -87.08,
+        "lat": 32.33
+      },
+      "weather": [{
+        "icon": "02d",
+        "description": "few clouds",
+        "main": "Clouds",
+        "id": 801
+      }],
+      "name": "Dallas County",
+      "main": {
+        "temp": 32.31,
+        "temp_min": 32.313,
+        "grnd_level": 1024.51,
+        "humidity": 60,
+        "pressure": 1024.51,
+        "sea_level": 1033.07,
+        "temp_max": 32.313
+      },
+      "clouds": {"all": 24},
       "id": 4058076,
       "sys": {
         "country": "US",
         "sunrise": 1471259592,
         "sunset": 1471307517,
-        "message": 0.0275
+        "message": 0.0287
       },
       "wind": {
-        "deg": 127.002,
-        "speed": 1.41
+        "deg": 158.001,
+        "speed": 2.28
       }
     },
     {
-      "dt": 1471263076,
-      "rain": {"1h": 1.27},
+      "dt": 1471281876,
+      "rain": {"3h": 0.0225},
       "coord": {
         "lon": 139.67,
         "lat": 35.28
       },
       "weather": [{
-        "icon": "10n",
-        "description": "moderate rain",
-        "main": "Rain",
-        "id": 501
+        "icon": "04n",
+        "description": "overcast clouds",
+        "main": "Clouds",
+        "id": 804
       }],
       "name": "Yokosuka",
       "main": {
-        "temp": 27.43,
-        "temp_min": 26.67,
-        "humidity": 79,
+        "temp": 25.59,
+        "temp_min": 23.89,
+        "humidity": 91,
         "pressure": 1004,
-        "temp_max": 28.33
+        "temp_max": 26.67
       },
-      "clouds": {"all": 64},
+      "clouds": {"all": 88},
       "id": 1848313,
       "sys": {
         "country": "JP",
@@ -100,71 +100,71 @@
         "sunset": 1471253402,
         "id": 10334,
         "type": 3,
-        "message": 0.0035
+        "message": 0.1368
       },
       "wind": {
-        "deg": 170.505,
-        "speed": 4.91
+        "deg": 146.001,
+        "speed": 3.38
       }
     },
     {
-      "dt": 1471263184,
-      "rain": {"3h": 0},
+      "dt": 1471281859,
+      "rain": {"3h": 0.0099999999999998},
       "coord": {
         "lon": -97.32,
         "lat": 27.88
       },
       "weather": [{
-        "icon": "03d",
-        "description": "scattered clouds",
+        "icon": "04d",
+        "description": "broken clouds",
         "main": "Clouds",
-        "id": 802
+        "id": 803
       }],
       "name": "Portland",
       "main": {
-        "temp": 23.88,
-        "temp_min": 23.33,
-        "humidity": 90,
-        "pressure": 1012,
-        "temp_max": 24.44
+        "temp": 30.7,
+        "temp_min": 27.22,
+        "humidity": 32,
+        "pressure": 1013,
+        "temp_max": 35.56
       },
-      "clouds": {"all": 32},
+      "clouds": {"all": 64},
       "id": 4720131,
       "sys": {
         "country": "US",
         "sunrise": 1471262412,
         "sunset": 1471309612,
-        "id": 9585,
+        "id": 58966,
         "type": 3,
-        "message": 0.0328
+        "message": 0.0174
       },
       "wind": {
-        "deg": 332,
-        "speed": 1.03,
-        "gust": 2.57
+        "deg": 69,
+        "speed": 3.08,
+        "gust": 5.14
       }
     },
     {
-      "dt": 1471263308,
+      "dt": 1471281787,
       "coord": {
         "lon": -117,
         "lat": 46.73
       },
       "weather": [{
-        "icon": "01n",
+        "icon": "01d",
         "description": "Sky is Clear",
         "main": "Clear",
         "id": 800
       }],
       "name": "Moscow",
       "main": {
-        "temp": 13.2,
-        "temp_min": 13.203,
-        "grnd_level": 935.07,
-        "humidity": 69,
-        "pressure": 935.07,
-        "sea_level": 1027.23,
-        "temp_max": 13.203
+        "temp": 29.66,
+        "temp_min": 29.663,
+        "grnd_level": 936.56,
+        "humidity": 24,
+        "pressure": 936.56,
+        "sea_level": 1027.56,
+        "temp_max": 29.663
       },
       "clouds": {"all": 0},
       "id": 5601538,
@@ -172,11 +172,11 @@
         "country": "US",
         "sunrise": 1471265254,
         "sunset": 1471316212,
-        "message": 0.0347
+        "message": 0.1667
       },
       "wind": {
-        "deg": 169.002,
-        "speed": 1.11
+        "deg": 240.501,
+        "speed": 1.78
       }
     }
   ]
