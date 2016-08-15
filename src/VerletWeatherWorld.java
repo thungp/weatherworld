@@ -6,7 +6,8 @@ public class VerletWeatherWorld extends PApplet {
 	
 	int gravity = 1;
 
-	int bgCol = 0xffddddff;
+	//int bgCol = 0xffddddff;
+	  int bgCol = 0x00000000;
 	Menu menu;
 	Cage cage;
 
@@ -22,11 +23,11 @@ public class VerletWeatherWorld extends PApplet {
 	int spiderCount = 15;
 	VerletSpider[] spiders = new VerletSpider[spiderCount];
 	
-	int sphereCount = 10;
+	int sphereCount = 100;
 	VerletSphere[] spheres = new VerletSphere[sphereCount];
 
 	public void setup() {
-		size(1024, 768, P3D); 
+		//size(1024, 768, P3D); 
 	 
 	  cage = new Cage(new PVector(width*1.075f, height*1.07f, 700));
 
