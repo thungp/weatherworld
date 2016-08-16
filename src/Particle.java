@@ -53,12 +53,11 @@ public class Particle {
 	void render() {
 		p.imageMode(p.CENTER);
 		p.tint(255,lifespan);
-		p.image(img,loc.x, loc.y);
-		p.image(img,loc.x, loc.y+10);
-		p.image(img,loc.x, loc.y+20);
-		p.image(img,loc.x, loc.y+30);
-		p.image(img,loc.x, loc.y+40);
-		p.image(img,loc.x, loc.y+50);
+		float theta = 0.0f;
+		for(int i = 0; i < 90; i++){
+			p.image(img,loc.x * p.cos(theta) * p.random(0.7f, 1.2f), loc.y * p.sin(theta) * p.random(0.7f, 1.5f) );
+			theta += p.TWO_PI / 90;
+		}
 		// pSphere.textureSphere(100.0f, 100.0f, 100.0f); // 3d Sphere
 		
 		// Drawing a circle instead

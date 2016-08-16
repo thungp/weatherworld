@@ -67,9 +67,10 @@ public class VerletWeatherWorld extends PApplet {
 
 	int sphereCount = 100;
 	VerletSphere[] spheres = new VerletSphere[sphereCount];
-
-	int cloudCount = 1;
-
+	
+	
+	int cloudCount = 4;
+	ParticleSystem[] clouds = new ParticleSystem[cloudCount];
 
 	public void setup() {
 		//size(1024, 768, P3D); 
@@ -88,9 +89,8 @@ public class VerletWeatherWorld extends PApplet {
 
 		cityChangeEventGenerator.setIntervalMs(1000 * CITY_CHG_PERIODICITY_IN_SECONDS);
 
-		// Cloud Particle System
-		img = this.loadImage("texture.png");
-		ps = new ParticleSystem(this, 0, new PVector(width/2, height/2, 700/2), img);	  
+		// Cloud Particle System Variables
+		img = this.loadImage("texture.png");	  
 		wind = new PVector(0, 0, 0);
 
 		cage = new Cage(new PVector(width*1.075f, height*1.07f, 700));
@@ -145,6 +145,11 @@ public class VerletWeatherWorld extends PApplet {
 			spheres[i] = new VerletSphere(new PVector(sz, sz, sz), random(.003f, .1f));
 			spheres[i].push(new PVector (random(-100.01f, 100.01f), random(-100.01f, 100.01f), random(-100.01f, 100.01f)));
 		}
+		
+		// clouds
+		for (int i = 0; i < clouds.length; i++) {
+			clouds[i] = new ParticleSystem(this, 0, new PVector(width/(i + 15), height/(i + 15), 700/2), img);
+		}
 	}
 
 	public void onWeatherRefreshTimerEvent() {
@@ -168,9 +173,7 @@ public class VerletWeatherWorld extends PApplet {
 
 	public void draw() {
 		background(bgCol);
-
 		
-
 		menu.display();
 
 		if(cityList != null) {
@@ -215,10 +218,12 @@ public class VerletWeatherWorld extends PApplet {
 				spiders[i].display();
 			}
 		} else if (menu.getSelected() == "clouds"){
-			ps.applyForce(wind.div(10));
-			ps.run();
-			for (int i = 0; i < 10; i++) {
-				ps.addParticle();
+			for(int i = 0; i < clouds.length; i++) {
+				clouds[i].applyForce(wind.div(10));
+				clouds[i].run();
+				for (int j = 0; j < 2; j++) {
+					clouds[i].addParticle();
+				}
 			}
 
 		} else if (menu.getSelected() == "soup") {
