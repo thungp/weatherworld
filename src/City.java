@@ -8,8 +8,11 @@ public class City {
   int windDirection = 0; // degrees
   PVector windVector = null;
   PApplet p;
+  String cityName;
+  int dt; // time
+  float percentCloudCoverage = 0.0f;
   
-	public PApplet getP() {
+  public PApplet getP() {
 		return p;
 	}
 	
@@ -28,11 +31,9 @@ public class City {
 	
 
 	
-	String cityName;
-	  int dt; // time
-	  float percentCloudCoverage = 0.0f;
+
 	  
-	  public float getPercentCloudCoverage() {
+	public float getPercentCloudCoverage() {
 		return percentCloudCoverage;
 	}
 	

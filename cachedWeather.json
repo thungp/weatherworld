@@ -2,181 +2,183 @@
   "cnt": 5,
   "list": [
     {
-      "dt": 1471281105,
+      "dt": 1471393957,
       "coord": {
         "lon": -101.83,
         "lat": 35.22
       },
       "weather": [{
-        "icon": "01d",
+        "icon": "01n",
         "description": "Sky is Clear",
         "main": "Clear",
         "id": 800
       }],
       "name": "Amarillo",
       "main": {
-        "temp": 29.41,
-        "temp_min": 29.413,
-        "grnd_level": 911.59,
-        "humidity": 38,
-        "pressure": 911.59,
-        "sea_level": 1028.98,
-        "temp_max": 29.413
+        "temp": 31.54,
+        "temp_min": 31.538,
+        "grnd_level": 910,
+        "humidity": 24,
+        "pressure": 910,
+        "sea_level": 1026.9,
+        "temp_max": 31.538
       },
       "clouds": {"all": 0},
       "id": 5516233,
       "sys": {
         "country": "US",
-        "sunrise": 1471262878,
-        "sunset": 1471311308,
-        "message": 0.0024
+        "sunrise": 1471435769,
+        "sunset": 1471483965,
+        "message": 0.0081
       },
       "wind": {
-        "deg": 221.001,
-        "speed": 3.23
+        "deg": 149.5,
+        "speed": 5.31
       }
     },
     {
-      "dt": 1471282087,
+      "dt": 1471393634,
+      "rain": {"3h": 2.12},
       "coord": {
         "lon": -87.08,
         "lat": 32.33
       },
       "weather": [{
-        "icon": "02d",
-        "description": "few clouds",
-        "main": "Clouds",
-        "id": 801
+        "icon": "10n",
+        "description": "light rain",
+        "main": "Rain",
+        "id": 500
       }],
       "name": "Dallas County",
       "main": {
-        "temp": 32.31,
-        "temp_min": 32.313,
-        "grnd_level": 1024.51,
-        "humidity": 60,
-        "pressure": 1024.51,
-        "sea_level": 1033.07,
-        "temp_max": 32.313
+        "temp": 27.59,
+        "temp_min": 27.588,
+        "grnd_level": 1026.08,
+        "humidity": 81,
+        "pressure": 1026.08,
+        "sea_level": 1032.45,
+        "temp_max": 27.588
       },
-      "clouds": {"all": 24},
+      "clouds": {"all": 36},
       "id": 4058076,
       "sys": {
         "country": "US",
-        "sunrise": 1471259592,
-        "sunset": 1471307517,
-        "message": 0.0287
+        "sunrise": 1471432471,
+        "sunset": 1471480185,
+        "message": 0.0041
       },
       "wind": {
-        "deg": 158.001,
-        "speed": 2.28
+        "deg": 159,
+        "speed": 2.51
       }
     },
     {
-      "dt": 1471281876,
-      "rain": {"3h": 0.0225},
+      "dt": 1471394715,
+      "rain": {"1h": 0.25},
       "coord": {
         "lon": 139.67,
         "lat": 35.28
       },
       "weather": [{
-        "icon": "04n",
-        "description": "overcast clouds",
-        "main": "Clouds",
-        "id": 804
+        "icon": "10d",
+        "description": "light rain",
+        "main": "Rain",
+        "id": 500
       }],
       "name": "Yokosuka",
       "main": {
-        "temp": 25.59,
-        "temp_min": 23.89,
-        "humidity": 91,
-        "pressure": 1004,
-        "temp_max": 26.67
+        "temp": 31.64,
+        "temp_min": 28.33,
+        "humidity": 71,
+        "pressure": 999,
+        "temp_max": 35.56
       },
-      "clouds": {"all": 88},
+      "clouds": {"all": 64},
       "id": 1848313,
       "sys": {
         "country": "JP",
-        "sunrise": 1471204882,
-        "sunset": 1471253402,
+        "sunrise": 1471377774,
+        "sunset": 1471426059,
         "id": 10334,
         "type": 3,
-        "message": 0.1368
+        "message": 0.0496
       },
       "wind": {
-        "deg": 146.001,
-        "speed": 3.38
+        "deg": 253,
+        "speed": 3.08,
+        "gust": 7.71
       }
     },
     {
-      "dt": 1471281859,
-      "rain": {"3h": 0.0099999999999998},
+      "dt": 1471394583,
+      "rain": {"3h": 0},
       "coord": {
         "lon": -97.32,
         "lat": 27.88
       },
       "weather": [{
-        "icon": "04d",
-        "description": "broken clouds",
+        "icon": "03n",
+        "description": "scattered clouds",
         "main": "Clouds",
-        "id": 803
+        "id": 802
       }],
       "name": "Portland",
       "main": {
-        "temp": 30.7,
-        "temp_min": 27.22,
-        "humidity": 32,
-        "pressure": 1013,
-        "temp_max": 35.56
+        "temp": 27.42,
+        "temp_min": 26.67,
+        "humidity": 96,
+        "pressure": 1015,
+        "temp_max": 27.78
       },
-      "clouds": {"all": 64},
+      "clouds": {"all": 32},
       "id": 4720131,
       "sys": {
         "country": "US",
-        "sunrise": 1471262412,
-        "sunset": 1471309612,
-        "id": 58966,
+        "sunrise": 1471435273,
+        "sunset": 1471482298,
+        "id": 9585,
         "type": 3,
-        "message": 0.0174
+        "message": 0.035
       },
       "wind": {
-        "deg": 69,
-        "speed": 3.08,
+        "deg": 104,
+        "speed": 2.57,
         "gust": 5.14
       }
     },
     {
-      "dt": 1471281787,
+      "dt": 1471393394,
       "coord": {
         "lon": -117,
         "lat": 46.73
       },
       "weather": [{
-        "icon": "01d",
+        "icon": "01n",
         "description": "Sky is Clear",
         "main": "Clear",
         "id": 800
       }],
       "name": "Moscow",
       "main": {
-        "temp": 29.66,
-        "temp_min": 29.663,
-        "grnd_level": 936.56,
-        "humidity": 24,
-        "pressure": 936.56,
-        "sea_level": 1027.56,
-        "temp_max": 29.663
+        "temp": 32.54,
+        "temp_min": 32.538,
+        "grnd_level": 934.4,
+        "humidity": 20,
+        "pressure": 934.4,
+        "sea_level": 1024.71,
+        "temp_max": 32.538
       },
       "clouds": {"all": 0},
       "id": 5601538,
       "sys": {
         "country": "US",
-        "sunrise": 1471265254,
-        "sunset": 1471316212,
-        "message": 0.1667
+        "sunrise": 1471438208,
+        "sunset": 1471488806,
+        "message": 0.175
       },
       "wind": {
-        "deg": 240.501,
-        "speed": 1.78
+        "deg": 272,
+        "speed": 2.81
       }
     }
   ]

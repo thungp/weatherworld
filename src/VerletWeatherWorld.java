@@ -1,6 +1,8 @@
 import processing.core.*;
 import processing.data.JSONObject;
 import processing.opengl.*;
+
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import org.multiply.processing.TimedEventGenerator;
 
@@ -180,8 +182,12 @@ public class VerletWeatherWorld extends PApplet {
 			String cityName = cityList.getCurrentCity().getName();
 			int windDirection = cityList.getCurrentCity().getWindDirection();
 			float windSpeed = cityList.getCurrentCity().getWindSpeed();
+			float pctCloudCoverage = cityList.getCurrentCity().getPercentCloudCoverage();
+			NumberFormat defaultFormat = NumberFormat.getPercentInstance();
+			defaultFormat.setMinimumFractionDigits(1);
+			//System.out.println("Percent format: " + defaultFormat.format(pctCloudCoverage));
 			wind = cityList.getCurrentCity().getWindVector();
-			text("City: " + cityName + " Wind Direction/Speed: " + windDirection + "/" + windSpeed, (float)(0.1 * width), (float) (height * 0.95));
+			text("City: " + cityName + " Wind Direction/Speed: " + windDirection + "/" + windSpeed + " Cloud Percentage(" + defaultFormat.format(pctCloudCoverage) + ")" , (float)(0.1 * width), (float) (height * 0.95));
 		}
 		translate(width/2, height/2, -550);
 		rotateY(frameCount*PI/680);
