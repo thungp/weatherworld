@@ -9,7 +9,7 @@ import org.multiply.processing.TimedEventGenerator;
 
 Assignment: Final Project
 Author: Peter Thung and Daniel Vance
-Based off  of Verlet World
+Based off of Verlet World
 
 
 
@@ -175,6 +175,8 @@ public class VerletWeatherWorld extends PApplet {
 		background(bgCol);
 		
 		menu.display();
+		
+		box(100);
 
 		if(cityList != null) {
 			String cityName = cityList.getCurrentCity().getName();
@@ -184,9 +186,14 @@ public class VerletWeatherWorld extends PApplet {
 			text("City: " + cityName + " Wind Direction/Speed: " + windDirection + "/" + windSpeed, (float)(0.1 * width), (float) (height * 0.95));
 		}
 		translate(width/2, height/2, -550);
-		rotateY(frameCount*PI/680);
-		//rotateX(frameCount*PI/280);
-		//grotateZ(frameCount*PI/580);
+		
+		if(keyPressed){
+			if(key == ' '){
+				rotateY(frameCount*PI/680);
+				//rotateX(frameCount*PI/280);
+				//grotateZ(frameCount*PI/580);
+			}
+		}
 		cage.display();
 
 
