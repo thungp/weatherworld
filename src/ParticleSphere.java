@@ -1,5 +1,6 @@
 /*
  *	https://processing.org/examples/texturesphere.html
+ *  Adapted by Daniel Vance for VerletWeatherWorld
  */
 import processing.core.*;
 

@@ -45,6 +45,7 @@ public class VerletWeatherWorld extends PApplet {
 	TimedEventGenerator weatherRefreshEventGenerator;
 	TimedEventGenerator cityChangeEventGenerator;
 	CityList cityList;
+	float pctCloudCoverage = 0.0f;
 
 	ParticleSystem ps;
 	PImage img;
@@ -61,7 +62,7 @@ public class VerletWeatherWorld extends PApplet {
 	VerletSphere[] spheres = new VerletSphere[sphereCount];
 	
 	
-	int cloudCount = 4;
+	int cloudCount = 20;
 	ParticleSystem[] clouds = new ParticleSystem[cloudCount];
 
 	public void setup() {
@@ -113,7 +114,7 @@ public class VerletWeatherWorld extends PApplet {
 		
 		// clouds
 		for (int i = 0; i < clouds.length; i++) {
-			clouds[i] = new ParticleSystem(this, 0, new PVector(width/(i + 15), height/(i + 15), 700/2), img);
+			clouds[i] = new ParticleSystem(this, 3, new PVector(width / 4 -random(i * 15), height / 4 - random(i * 15), random(700/2)), img);
 		}
 	}
 
@@ -150,7 +151,7 @@ public class VerletWeatherWorld extends PApplet {
 			String cityName = cityList.getCurrentCity().getName();
 			int windDirection = cityList.getCurrentCity().getWindDirection();
 			float windSpeed = cityList.getCurrentCity().getWindSpeed();
-			float pctCloudCoverage = cityList.getCurrentCity().getPercentCloudCoverage();
+			pctCloudCoverage = cityList.getCurrentCity().getPercentCloudCoverage();
 			NumberFormat defaultFormat = NumberFormat.getPercentInstance();
 			defaultFormat.setMinimumFractionDigits(1);
 			//System.out.println("Percent format: " + defaultFormat.format(pctCloudCoverage));
@@ -177,7 +178,7 @@ public class VerletWeatherWorld extends PApplet {
 			}
 
 		} else if (menu.getSelected() == "clouds"){
-			for(int i = 0; i < clouds.length; i++) {
+			for(int i = 0; i <= 20 * pctCloudCoverage; i++) {
 				clouds[i].applyForce(wind.div(10));
 				clouds[i].run();
 				for (int j = 0; j < 2; j++) {

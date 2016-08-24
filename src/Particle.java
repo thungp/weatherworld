@@ -1,9 +1,9 @@
 /**
  * Smoke Particle System
- * by Daniel Shiffman.
+ * by Daniel Shiffman
+ * 
+ * Adapted by Daniel Vance for VerletWeatherWorld
  *
- * A basic smoke effect using a particle system. Each particle
- * is rendered as an alpha masked image.
  */
 
 import processing.core.*;
