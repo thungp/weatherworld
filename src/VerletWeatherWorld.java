@@ -182,8 +182,6 @@ public class VerletWeatherWorld extends PApplet {
 		background(bgCol);
 		
 		menu.display();
-		
-		box(100);
 
 		if(cityList != null) {
 			String cityName = cityList.getCurrentCity().getName();
