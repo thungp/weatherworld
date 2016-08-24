@@ -158,8 +158,13 @@ public class VerletWeatherWorld extends PApplet {
 		System.out.println("Got a onWeatherRefreshTimerEvent!");
 		// list of city IDs
 		//JSONObject json = loadJSONObject("http://api.openweathermap.org/data/2.5/group?id=4058076,1848313,4720131&units=metric&mode=json&appid=cbc1fc23414e03a198fb37afa9c5bbd8");
-		JSONObject json = loadJSONObject("http://api.openweathermap.org/data/2.5/group?id=" + CITY_LIST + "&units=metric&mode=json&appid=cbc1fc23414e03a198fb37afa9c5bbd8");
-		saveJSONObject(json, "cachedWeather.json");
+		try {
+			JSONObject json = loadJSONObject("http://api.openweathermap.org/data/2.5/group?id=" + CITY_LIST + "&units=metric&mode=json&appid=cbc1fc23414e03a198fb37afa9c5bbd8");		
+			saveJSONObject(json, "cachedWeather.json");
+		} catch (Exception e) {
+			System.out.println("Error in retreiving weather payload: " + e.getMessage());
+			
+		}
 		if(cityList != null) {
 			cityList.initializeCityList();
 		}
@@ -167,7 +172,7 @@ public class VerletWeatherWorld extends PApplet {
 
 
 	public void onCityChangeTimerEvent() {
-		System.out.println("Got a onCityChangeTimerEvent!");
+		//System.out.println("Got a onCityChangeTimerEvent!");
 		if(cityList != null) {
 			cityList. getNextCity();
 		}
