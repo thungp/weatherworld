@@ -2,183 +2,185 @@
   "cnt": 5,
   "list": [
     {
-      "dt": 1471393957,
+      "dt": 1472001300,
       "coord": {
         "lon": -101.83,
         "lat": 35.22
       },
+      "visibility": 16093,
       "weather": [{
         "icon": "01n",
-        "description": "Sky is Clear",
+        "description": "sky is clear",
         "main": "Clear",
         "id": 800
       }],
       "name": "Amarillo",
       "main": {
-        "temp": 31.54,
-        "temp_min": 31.538,
-        "grnd_level": 910,
-        "humidity": 24,
-        "pressure": 910,
-        "sea_level": 1026.9,
-        "temp_max": 31.538
+        "temp": 28.84,
+        "temp_min": 26,
+        "humidity": 39,
+        "pressure": 1015,
+        "temp_max": 31
       },
-      "clouds": {"all": 0},
+      "clouds": {"all": 1},
       "id": 5516233,
       "sys": {
         "country": "US",
-        "sunrise": 1471435769,
-        "sunset": 1471483965,
-        "message": 0.0081
+        "sunrise": 1472040887,
+        "sunset": 1472088235,
+        "id": 2601,
+        "type": 1,
+        "message": 0.0066
       },
       "wind": {
-        "deg": 149.5,
-        "speed": 5.31
+        "deg": 180,
+        "speed": 8.2,
+        "gust": 11.3
       }
     },
     {
-      "dt": 1471393634,
-      "rain": {"3h": 2.12},
+      "dt": 1472003880,
       "coord": {
         "lon": -87.08,
         "lat": 32.33
       },
+      "visibility": 16093,
       "weather": [{
-        "icon": "10n",
-        "description": "light rain",
-        "main": "Rain",
-        "id": 500
+        "icon": "04n",
+        "description": "broken clouds",
+        "main": "Clouds",
+        "id": 803
       }],
       "name": "Dallas County",
       "main": {
-        "temp": 27.59,
-        "temp_min": 27.588,
-        "grnd_level": 1026.08,
-        "humidity": 81,
-        "pressure": 1026.08,
-        "sea_level": 1032.45,
-        "temp_max": 27.588
+        "temp": 29,
+        "temp_min": 29,
+        "humidity": 79,
+        "pressure": 1021,
+        "temp_max": 29
       },
-      "clouds": {"all": 36},
+      "clouds": {"all": 75},
       "id": 4058076,
       "sys": {
         "country": "US",
-        "sunrise": 1471432471,
-        "sunset": 1471480185,
-        "message": 0.0041
+        "sunrise": 1472037543,
+        "sunset": 1472084500,
+        "id": 231,
+        "type": 1,
+        "message": 0.0078
       },
       "wind": {
-        "deg": 159,
-        "speed": 2.51
+        "deg": 43.0037,
+        "speed": 1.06
       }
     },
     {
-      "dt": 1471394715,
-      "rain": {"1h": 0.25},
+      "dt": 1472004831,
       "coord": {
         "lon": 139.67,
         "lat": 35.28
       },
+      "visibility": 10000,
       "weather": [{
-        "icon": "10d",
-        "description": "light rain",
+        "icon": "09d",
+        "description": "light intensity shower rain",
         "main": "Rain",
-        "id": 500
+        "id": 520
       }],
       "name": "Yokosuka",
       "main": {
-        "temp": 31.64,
-        "temp_min": 28.33,
-        "humidity": 71,
-        "pressure": 999,
-        "temp_max": 35.56
+        "temp": 28.95,
+        "temp_min": 25,
+        "humidity": 78,
+        "pressure": 1009,
+        "temp_max": 32.22
       },
-      "clouds": {"all": 64},
+      "clouds": {"all": 40},
       "id": 1848313,
       "sys": {
         "country": "JP",
-        "sunrise": 1471377774,
-        "sunset": 1471426059,
-        "id": 10334,
-        "type": 3,
-        "message": 0.0496
+        "sunrise": 1471982892,
+        "sunset": 1472030332,
+        "id": 7619,
+        "type": 1,
+        "message": 0.0084
       },
       "wind": {
-        "deg": 253,
-        "speed": 3.08,
-        "gust": 7.71
+        "deg": 60,
+        "speed": 1
       }
     },
     {
-      "dt": 1471394583,
-      "rain": {"3h": 0},
+      "dt": 1472004786,
       "coord": {
         "lon": -97.32,
         "lat": 27.88
       },
+      "visibility": 16093,
       "weather": [{
-        "icon": "03n",
-        "description": "scattered clouds",
-        "main": "Clouds",
-        "id": 802
+        "icon": "01n",
+        "description": "sky is clear",
+        "main": "Clear",
+        "id": 800
       }],
       "name": "Portland",
       "main": {
-        "temp": 27.42,
-        "temp_min": 26.67,
-        "humidity": 96,
-        "pressure": 1015,
-        "temp_max": 27.78
+        "temp": 28.69,
+        "temp_min": 27.22,
+        "humidity": 66,
+        "pressure": 1018,
+        "temp_max": 30
       },
-      "clouds": {"all": 32},
+      "clouds": {"all": 1},
       "id": 4720131,
       "sys": {
         "country": "US",
-        "sunrise": 1471435273,
-        "sunset": 1471482298,
-        "id": 9585,
-        "type": 3,
-        "message": 0.035
+        "sunrise": 1472040282,
+        "sunset": 1472086676,
+        "id": 2562,
+        "type": 1,
+        "message": 0.004
       },
       "wind": {
-        "deg": 104,
-        "speed": 2.57,
-        "gust": 5.14
+        "deg": 140,
+        "speed": 4.6,
+        "gust": 7.2
       }
     },
     {
-      "dt": 1471393394,
+      "dt": 1472003760,
       "coord": {
         "lon": -117,
         "lat": 46.73
       },
+      "visibility": 16093,
       "weather": [{
         "icon": "01n",
-        "description": "Sky is Clear",
+        "description": "sky is clear",
         "main": "Clear",
         "id": 800
       }],
       "name": "Moscow",
       "main": {
-        "temp": 32.54,
-        "temp_min": 32.538,
-        "grnd_level": 934.4,
-        "humidity": 20,
-        "pressure": 934.4,
-        "sea_level": 1024.71,
-        "temp_max": 32.538
+        "temp": 25.21,
+        "temp_min": 24,
+        "humidity": 22,
+        "pressure": 1019,
+        "temp_max": 27
       },
-      "clouds": {"all": 0},
+      "clouds": {"all": 1},
       "id": 5601538,
       "sys": {
         "country": "US",
-        "sunrise": 1471438208,
-        "sunset": 1471488806,
-        "message": 0.175
+        "sunrise": 1472043549,
+        "sunset": 1472092852,
+        "id": 923,
+        "type": 1,
+        "message": 0.0035
       },
       "wind": {
-        "deg": 272,
-        "speed": 2.81
+        "deg": 300,
+        "speed": 2.6
       }
     }
   ]
